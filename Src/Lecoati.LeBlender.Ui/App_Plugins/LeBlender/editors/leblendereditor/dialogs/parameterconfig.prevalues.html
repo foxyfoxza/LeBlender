@@ -24,6 +24,14 @@
                         <input class="umb-editor umb-textstring" type="text" ng-model="model.value.alias" required />
                     </umb-control-group>
 
+                    <umb-control-group label="Validation" description="">
+                        <input class="umb-editor umb-textstring" type="text" ng-model="model.value.validation" />
+                    </umb-control-group>
+
+                    <umb-control-group label="Mandatory" description="">
+                        <input type="checkbox" name="mandatory" ng-model="model.value.mandatory">
+                    </umb-control-group>
+
                     <umb-control-group label="Description" description="">
                         <textarea class="umb-editor umb-textstring" type="text" ng-model="model.value.description" />
                     </umb-control-group>

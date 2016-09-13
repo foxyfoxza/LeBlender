@@ -40,7 +40,10 @@ namespace Lecoati.LeBlender.Extension
             }
             else
             {
-                return GetUmbracoHelper().TypedContent(HttpContext.Current.Request["id"].ToString());
+                if (HttpContext.Current.Request["id"] != null)
+                    return GetUmbracoHelper().TypedContent(HttpContext.Current.Request["id"].ToString());
+                else
+                    return GetUmbracoHelper().TypedContent(HttpContext.Current.Session["NodeId"].ToString());
             }
         }
 

@@ -169,6 +169,8 @@
             $scope.model.value = {
                 name: "",
                 alias: "",
+                mandatory: false,
+                validation: "",
             };
         }
 
